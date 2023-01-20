@@ -22,6 +22,7 @@ public class PingController {
 
     @GetMapping("/ping")
     public ResponseEntity<RequestInfo> ping(HttpServletRequest request) {
+        System.out.println("llego la peticion");
         return ResponseEntity.status(HttpStatus.OK).body(
                 pingService.getRequestInfo(request));
     }
