@@ -9,6 +9,7 @@ phases:
     - IMAGE_TAG=${COMMIT_HASH:=latest}
     - APPLICATION_NAME=spring-boot-sample-app
     - REPOSITORY_URI=716032174431.dkr.ecr.us-east-1.amazonaws.com/spring-boot-sample-app
+  build:
     commands: 
     - echo Build started on `date` 
     - echo Building the Docker image... 
